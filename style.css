@@ -1,0 +1,126 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main {
+
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: rgba(121, 53, 56, 0.5);
+}
+
+#text {
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  left: 5%; 
+  top: 50%;
+  transform: translate(0,-50%);
+
+}
+
+#text h1 {
+  font-size: 85px;  /* Responsive font size */
+  font-family: gilroy;
+  font-weight: 900;
+  letter-spacing: 8px;
+  line-height: 78px;
+  color: #ffff;
+  text-transform: uppercase;
+}
+
+#part1 {
+  height: 100%;
+  width: 26%;
+  /* background: red; */
+}
+
+#part2 {
+  height: 100%;
+  width: 67%;
+  background: blue;
+  background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #1e849952;
+  z-index: 1; /* Ensures it's behind the content */
+}
+
+#part3 {
+  height: 100%;
+  width: 7%;
+  /* background: yellow; */
+}
+
+#smallimage {
+  height: 400px;
+  width: 300px;
+  background-image: url(https://images.unsplash.com/photo-1529680459049-bf0340fa0755?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  transform: translate(0, -50%);
+   }
+
+
+
+   #verticaltext {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -22%;  /* Move it to the right side */
+    top: 0%;  /* Adjust top position so it stays visible */
+    transform-origin: 0% 0%;
+    z-index: 2;  /* Ensure it's above other elements */
+  }
+  
+  #verticaltext h1 {
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 15px;
+    font-family: Monument;
+    -webkit-text-stroke-width: 2px; /* Ensure it's thick enough to be visible */
+    -webkit-text-stroke-color: #ffff; /* White stroke for visibility */
+  }
+  
+
+  
+
+#nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  left: 7%;
+  top: 5%;
+  
+}
+
+ img {
+  height: 50px;
+}
+
+nav h5 {
+  font-size: 20px;
+  color: #ffff;
+  font-family: sans-serif;
+}
+
